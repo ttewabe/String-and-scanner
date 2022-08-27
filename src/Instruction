@@ -1,0 +1,75 @@
+
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args){
+
+    Scanner in = new Scanner(System.in);
+       System.out.println("Type two words below this sentence!");
+       String mystery = in.next();
+       String mystery2 = in.next();
+
+        String str = "1234";
+
+       int strLen = "1234".length();
+          System.out.println(strLen);
+
+        int strLen2 = mystery.length();
+          System.out.println(strLen2);
+
+//This gets the character at the 1st index, aka the second character
+      char secondChar = "1234".charAt(1);
+          System.out.println(secondChar);
+
+     char firstChar = "1234".charAt(0);
+          System.out.println(firstChar);
+
+        String combo1 = "1234" + "5678";
+        String combo2 = "1234".concat("5678");
+          System.out.println(combo1);
+          System.out.println(combo2);
+
+        String Mystery2 = "mystery".concat("2");
+         System.out.println(mystery.concat(mystery2));
+
+       in.close();
+
+  }
+}
+Instructions
+Description:
+This activity will help you understand some common String methods in Java, namely length(), charAt(), and concat().
+
+Please follow the steps below:
+
+Steps:
+Copy and paste the following code into the main() method:
+ Scanner in = new Scanner(System.in);
+ System.out.println("Type two words below this sentence!");
+ String mystery = in.next();
+ String mystery2 = in.next();
+ in.close();
+This code creates a Scanner object, asks the user to enter two words into the console, saves the words into variables, and then closes the Scanner object.
+Copy and paste the following after the previous code:
+int strLen = "1234".length();
+System.out.println(strLen);
+The first statement gets the length, or the amount of characters, from the string 1234. It then saves the value into the variable strLen. The next statement prints out the value in strLen.
+Underneath that, print the length of mystery, the string that was declared and initialized previously in Step 1.
+Under that, copy and paste the following:
+//This gets the character at the 1st index, aka the second character
+char secondChar = "1234".charAt(1);
+System.out.println(secondChar);
+String objects have numbered positions for their characters. The first position is numbered 0, the second is numbered 1, and so on. The first statement gets the character at index 1, which is the second position in the String, and saves the character into the variable secondChar. The next statement prints out the value of secondChar.
+Under the code we have so far in the main() method, print the 1st character in the String mystery.
+Under that, copy and paste the following:
+String combo1 = "1234" + "5678";
+String combo2 = "1234".concat("5678");
+System.out.println(combo1);
+System.out.println(combo2);
+The first two statements demonstrate different ways of concatenating (or adding together) two String values. The first statement uses the + operator to append the String 5678 to the String 1234. The second statement uses the method concat() to do the same thing.
+Under that code, combine mystery and mystery2 using the built-in string method used in the previous step and print the resulting string.
+Test:
+Use the test provided. To test it yourself:
+
+run the program
+enter two words seperated by a space in the console on the right-hand side of the screen, followed by enter.
